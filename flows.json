@@ -56,7 +56,9 @@
         "x": 710,
         "y": 360,
         "wires": [
-            []
+            [
+                "7630ebbe89297c78"
+            ]
         ]
     },
     {
@@ -115,9 +117,27 @@
         "sunElevationThreshold": 6,
         "sunShowElevationInStatus": false,
         "outputfreq": "output.statechange.startup",
-        "x": 940,
-        "y": 180,
+        "x": 1000,
+        "y": 480,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7630ebbe89297c78",
+        "type": "light-scheduler-filter",
+        "z": "14ddb829742be065",
+        "settings": "",
+        "events": "[]",
+        "name": "",
+        "onlyWhenDark": true,
+        "scheduleRndMax": 0,
+        "sunElevationThreshold": 6,
+        "sunShowElevationInStatus": false,
+        "x": 960,
+        "y": 360,
+        "wires": [
+            [],
             []
         ]
     }
