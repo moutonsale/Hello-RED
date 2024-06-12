@@ -1,1 +1,124 @@
-[]
+[
+    {
+        "id": "14ddb829742be065",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ae294b68ffe76aa0",
+        "type": "chronos-scheduler",
+        "z": "14ddb829742be065",
+        "name": "",
+        "config": "",
+        "schedule": [
+            {
+                "trigger": {
+                    "type": "time",
+                    "value": "",
+                    "offset": 0,
+                    "random": false
+                },
+                "output": {
+                    "type": "msg",
+                    "property": {
+                        "name": "payload",
+                        "type": "str",
+                        "value": ""
+                    }
+                }
+            }
+        ],
+        "disabled": false,
+        "multiPort": false,
+        "nextEventPort": false,
+        "delayOnStart": true,
+        "onStartDelay": 0.1,
+        "outputs": 1,
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "aeeeca20cd8e265e"
+            ]
+        ]
+    },
+    {
+        "id": "aeeeca20cd8e265e",
+        "type": "json",
+        "z": "14ddb829742be065",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 710,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ed1cc99022452ae",
+        "type": "ui_time_scheduler",
+        "z": "14ddb829742be065",
+        "name": "",
+        "startDay": 0,
+        "refresh": 60,
+        "devices": [
+            "Device 1"
+        ],
+        "singleOff": false,
+        "onlySendChange": false,
+        "customPayload": false,
+        "eventMode": false,
+        "eventOptions": [
+            {
+                "label": "On",
+                "event": "true"
+            },
+            {
+                "label": "Off",
+                "event": "false"
+            }
+        ],
+        "sendTopic": false,
+        "lat": "",
+        "lon": "",
+        "customContextStore": "",
+        "outputs": 2,
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ca29874d53079e94",
+        "type": "light-scheduler",
+        "z": "14ddb829742be065",
+        "settings": "",
+        "events": "[]",
+        "topic": "",
+        "name": "",
+        "onPayload": "ON",
+        "onPayloadType": "str",
+        "offPayload": "OFF",
+        "offPayloadType": "str",
+        "onlyWhenDark": true,
+        "scheduleRndMax": 0,
+        "sunElevationThreshold": 6,
+        "sunShowElevationInStatus": false,
+        "outputfreq": "output.statechange.startup",
+        "x": 940,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    }
+]
