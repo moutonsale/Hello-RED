@@ -8,6 +8,20 @@
         "env": []
     },
     {
+        "id": "aeeeca20cd8e265e",
+        "type": "json",
+        "z": "14ddb829742be065",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 710,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "ae294b68ffe76aa0",
         "type": "chronos-scheduler",
         "z": "14ddb829742be065",
@@ -46,15 +60,24 @@
         ]
     },
     {
-        "id": "aeeeca20cd8e265e",
-        "type": "json",
+        "id": "ca29874d53079e94",
+        "type": "light-scheduler",
         "z": "14ddb829742be065",
+        "settings": "",
+        "events": "[]",
+        "topic": "",
         "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 710,
-        "y": 360,
+        "onPayload": "ON",
+        "onPayloadType": "str",
+        "offPayload": "OFF",
+        "offPayloadType": "str",
+        "onlyWhenDark": true,
+        "scheduleRndMax": 0,
+        "sunElevationThreshold": 6,
+        "sunShowElevationInStatus": false,
+        "outputfreq": "output.statechange.startup",
+        "x": 600,
+        "y": 660,
         "wires": [
             []
         ]
@@ -94,30 +117,9 @@
         "x": 370,
         "y": 180,
         "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "ca29874d53079e94",
-        "type": "light-scheduler",
-        "z": "14ddb829742be065",
-        "settings": "",
-        "events": "[]",
-        "topic": "",
-        "name": "",
-        "onPayload": "ON",
-        "onPayloadType": "str",
-        "offPayload": "OFF",
-        "offPayloadType": "str",
-        "onlyWhenDark": true,
-        "scheduleRndMax": 0,
-        "sunElevationThreshold": 6,
-        "sunShowElevationInStatus": false,
-        "outputfreq": "output.statechange.startup",
-        "x": 940,
-        "y": 180,
-        "wires": [
+            [
+                "ca29874d53079e94"
+            ],
             []
         ]
     }
