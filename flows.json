@@ -96,7 +96,9 @@
         "x": 370,
         "y": 180,
         "wires": [
-            [],
+            [
+                "ca29874d53079e94"
+            ],
             []
         ]
     },
@@ -117,8 +119,8 @@
         "sunElevationThreshold": 6,
         "sunShowElevationInStatus": false,
         "outputfreq": "output.statechange.startup",
-        "x": 1000,
-        "y": 480,
+        "x": 600,
+        "y": 660,
         "wires": [
             []
         ]
