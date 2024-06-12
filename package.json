@@ -2,7 +2,11 @@
     "name": "Hello_RED",
     "description": "testouille",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-chronos": "1.24.0",
+        "node-red-contrib-light-scheduler": "0.0.18",
+        "node-red-contrib-ui-time-scheduler": "1.17.2"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
